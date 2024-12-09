@@ -65,6 +65,7 @@ const Card = ({ transaction }) => {
 					<FaSackDollar />
 					Amount: {transaction.amount}
 				</p>
+				
 				<p className='text-white flex items-center gap-1'>
 					<FaLocationDot />
 					Location: {transaction.location}
