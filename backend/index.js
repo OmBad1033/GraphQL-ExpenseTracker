@@ -17,9 +17,11 @@ import mergedtypeDefs from "./typeDefs/index.js";
 
 import { connectDB } from "./db/connectDB.js";
 import { configurePassport } from './passport/passport.config.js';
+import job from './cron.js';
 
 dotenv.config();
 configurePassport();
+job.start();
 
 const app = express();
 const httpServer = http.createServer(app);
